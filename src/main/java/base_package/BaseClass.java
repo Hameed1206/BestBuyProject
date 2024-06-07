@@ -11,7 +11,7 @@ public class BaseClass extends UtilityClass{
 
 	@BeforeMethod
 	public static void startUp() throws IOException {
-		launchFireFox();
+		launch();
 	}
 	@AfterMethod
 	public static void tearDown() throws IOException {

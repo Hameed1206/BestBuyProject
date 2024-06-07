@@ -71,8 +71,19 @@ public class TestData extends BaseClass{
 
 		return data;
 }
+     public static Object[][] signUpTestDatas2() throws IOException {
+		
+		Object[][] data = new Object[1][readValueFromExcel("SignUp").getRow(0).getPhysicalNumberOfCells()];
+		
+			XSSFRow row = readValueFromExcel("SignUp").getRow(1);
+			for (int j = 0; j < row.getPhysicalNumberOfCells(); j++) {
+				XSSFCell cell = row.getCell(j);
+				data[0][j] = cell.toString();
+			} 
 
-public static Object[][] paymentPageDetails() throws IOException {
+		return data;
+}
+      public static Object[][] paymentPageDetails() throws IOException {
 		
 		Object[][] data = new Object[readValueFromExcel("Details").getPhysicalNumberOfRows()-1][readValueFromExcel("Details").getRow(0).getPhysicalNumberOfCells()];
 		for (int i = 1; i < readValueFromExcel("Details").getPhysicalNumberOfRows(); i++) {	

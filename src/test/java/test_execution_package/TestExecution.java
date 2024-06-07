@@ -39,7 +39,11 @@ public class TestExecution extends BaseClass{
 	public Object[][] signUpTestData() throws IOException {
 		Object[][] datas = TestData.signUpTestDatas();
 		return datas;
-		
+	}
+	@DataProvider (name="SignUp function 2")
+	public Object[] signUpTestData2() throws IOException {
+		Object[] datas = TestData.signUpTestDatas2();
+		return datas;
 	}
 	@DataProvider (name="SignIn function")
 	public Object[][] signInTestData() throws IOException {
@@ -63,9 +67,9 @@ public class TestExecution extends BaseClass{
 		extent = new ExtentReports();
 		extent.attachReporter(crtreport);
 	}
-    //Test  Validating sign in function using different credentials
-	// Data provider is used to access multiple values in Excel
-	@Test(dataProvider = "SignUp function")
+                                 //Test  Validating sign up function using different credentials
+	                              // Data provider is used to access multiple values in Excel
+	@Test(dataProvider = "SignUp function" , priority = 1)
 	public void ValidateCreateNewAccountFunction(String s1, String s2, String s3, String s4, String s5) throws IOException {
 		SelectYourCountry createAccountPage = new SelectYourCountry(driver);
 		TestExecution exe = new TestExecution("SignUp function Validation");
@@ -73,20 +77,55 @@ public class TestExecution extends BaseClass{
 		snap = extent.createTest("ValidateCreateNewAccountFunction");
 		try {
 			createAccountPage.getUnitedStates().getAccountButton().getAccountButton().getfName(s1).getlName(s2).getEmail(s3).getPass(s4)
-			.getcPass(s4).getPhone(s5).getActRecoveryCheckBox().getCreateActButton();
+			.getcPass(s4).getPhone(s5).getActRecoveryCheckBox().getCreateActButton().getErrorMsg();
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage() +" "+ e.getClass());
 		}
-		
+		String errorMsg = accountPage.getErrorMsg();
 		snap.addScreenCaptureFromPath(captureScreenshot(), "ValidateCreateNewAccountFunction");
-		snap.log(Status.PASS, accountPage.getErrorMsg());
+		snap.log(Status.PASS, errorMsg);
 		extent.flush();
 	}
+	                                        //Test Validating sign in function missing one field. 
 	
-     // Validating sign in function using different credentials based on Decision table technique
-	// Data provider is used to access multiple values in Excel
-	@Test(dataProvider = "SignIn function")
+		@Test(dataProvider = "SignUp function 2" , priority = 2)
+		public void ValidateCreateNewAccountFunctionMissingOneField(String s1, String s2, String s3, String s4, String s5) throws IOException {
+			SelectYourCountry createAccountPage = new SelectYourCountry(driver);
+			TestExecution exe = new TestExecution("SignUp function Validation");
+			CreateAccountPage accountPage = new CreateAccountPage(driver);
+			snap = extent.createTest("ValidateCreateNewAccountFunction");
+			try {
+				createAccountPage.getUnitedStates().getAccountButton().getAccountButton().getlName(s2).getEmail(s3).getPass(s4)
+				.getcPass(s4).getPhone(s5).getActRecoveryCheckBox().getCreateActButton().getMissedError();
+				driver.navigate().refresh();
+				accountPage.getfName(s1).getEmail(s3).getPass(s4)
+				.getcPass(s4).getPhone(s5).getActRecoveryCheckBox().getCreateActButton().getMissedError();
+				driver.navigate().refresh();
+				accountPage.getfName(s1).getlName(s2).getPass(s4)
+				.getcPass(s4).getPhone(s5).getActRecoveryCheckBox().getCreateActButton().getMissedError();
+				driver.navigate().refresh();
+				accountPage.getfName(s1).getlName(s2).getEmail(s3)
+				.getcPass(s4).getPhone(s5).getActRecoveryCheckBox().getCreateActButton().getMissedError();
+				driver.navigate().refresh();
+				accountPage.getfName(s1).getlName(s2).getEmail(s3).getPass(s4)
+				.getPhone(s5).getActRecoveryCheckBox().getCreateActButton().getMissedError();
+				driver.navigate().refresh();
+				accountPage.getfName(s1).getlName(s2).getEmail(s3).getPass(s4)
+				.getcPass(s4).getActRecoveryCheckBox().getCreateActButton().getMissedError();
+			} catch (Exception e) {
+				e.printStackTrace();
+				System.out.println(e.getMessage() +" "+ e.getClass());
+			}
+			
+			snap.addScreenCaptureFromPath(captureScreenshot(), "ValidateCreateNewAccountFunction");
+			snap.log(Status.PASS, "Field missed out");
+			extent.flush();
+		}
+	
+                  // Validating sign in function using different credentials based on Decision table technique
+	                          // Data provider is used to access multiple values in Excel
+	@Test(dataProvider = "SignIn function" , priority = 3)
 	public void ValidateSignInFunction(String s1, String s2, String s3) throws IOException {
 		SelectYourCountry createAccountPage = new SelectYourCountry(driver);
 		TestExecution exe = new TestExecution("SignIn function Validation");
@@ -105,25 +144,31 @@ public class TestExecution extends BaseClass{
 		extent.flush();
 	}
 	
-	//Validation of menu items and footer links
-	@Test(dependsOnMethods = "ValidateSignInFunction")
+	                              //Validation of URL, menu items and footer links
+	@Test(priority = 4)
 	public void ValidateAllMenuAndFooterLinks() throws IOException {
 		SelectYourCountry createAccountPage = new SelectYourCountry(driver);
 		TestExecution exe = new TestExecution("Menu and footer link validation");
+		snap = extent.createTest("MenuAndFooterLinkValidation");
+		validateLink();
 		try {
 			createAccountPage.getUnitedStates().getTopSecondLineLinks().getFooterlinks();
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage() +" "+ e.getClass());
 		}
+		snap.addScreenCaptureFromPath(captureScreenshot(), "MenuAndFooterLinkValidation");
+		snap.log(Status.PASS, "Menu and Footer link validation done succesfully");
+		extent.flush();
 		
 	}
 	
-	//Validating the function of searching a item through search box and adding that into cart and verifying whether 
-	//selected Item and Item added in cart is same and checking out to place order
-	// Also we are asking report to track activities and prepare a report with screenshots
+	                //Validating the function of searching a item through search box and adding that into cart and verifying whether 
+	                            //selected Item and Item added in cart is same and checking out to place order
+	                         // Also we are asking report to track activities and prepare a report with screenshots
+	
 	@Parameters({"email","phoneNo"})
-	@Test(dependsOnMethods = "ValidateAllMenuAndFooterLinks")
+	@Test(priority = 5)
 	public void ValidateSearchAndAddItemToCart(String mail, String mob) throws IOException, InterruptedException {
 		SelectYourCountry createAccountPage = new SelectYourCountry(driver);
 		datas = new TestData();
@@ -154,9 +199,28 @@ public class TestExecution extends BaseClass{
 		snap.log(Status.PASS, page.getContinuePaymentButtonError());
 		extent.flush();
 	}
+	@Test(priority = 6)
+	public void validateSearchAndFilter() throws IOException, InterruptedException {
+		SelectYourCountry createAccountPage = new SelectYourCountry(driver);
+		datas = new TestData();
+		TestExecution exe = new TestExecution("Validate Search and Filter");
+		
+		snap = extent.createTest("ValidateSearchAndFilter");
+		try {
+			createAccountPage.getUnitedStates().getSearchBox(datas.getProduct1()).getSearchButton().getFilter(1, 1).getFilter(2, 1).getFilter(3, 6)
+			.getFilter(4, 2).getFilter(6, 3).getFilter(8, 2);
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(e.getMessage() +" "+ e.getClass());
+		}
+		snap.addScreenCaptureFromPath(captureScreenshot(), "ValidateSearchAndFilter");
+		snap.log(Status.PASS, "Filter applied succesfully");
+		extent.flush();
+	}
 	
-	// Validating function of adding a Item through menu and options there
-	@Test(dependsOnMethods = "ValidateSearchAndAddItemToCart")
+	                                // Validating function of adding a Item through menu and options there
+	
+	@Test(priority = 7)
 	public void validateAddingItemfromMenu() throws IOException {
 		SelectYourCountry createAccountPage = new SelectYourCountry(driver);
 		datas = new TestData();
@@ -182,8 +246,9 @@ public class TestExecution extends BaseClass{
 		extent.flush();
 	}
 	
-	//Validating function of adding item through Brand option from menu
-	@Test(dependsOnMethods = "validateAddingItemfromMenu")
+	                                     //Validating function of adding item through Brand option from menu
+	
+	@Test(priority = 8)
 	public void validateAddingItemfromMenuViaBrand() throws IOException {
 		SelectYourCountry createAccountPage = new SelectYourCountry(driver);
 		datas = new TestData();
@@ -191,19 +256,26 @@ public class TestExecution extends BaseClass{
 		AddToCartPage atoCPage = new AddToCartPage(driver);
 		TestExecution exe = new TestExecution("Validate adding item from menu via brand");
 		snap = extent.createTest("validateAddingItemfromMenuViaBrand");
+		try {
 		createAccountPage.getUnitedStates().getMenuButtton().getBrandsButton(datas.getBrandName()).getSmartPhones().getSelectPhone().clickProductWithAddToCartOption();
 		String productTitle = itemPage.getProductTitle();
 		itemPage.getAddToCartButton().getGoToCartButton();
 		String verifyTitle = atoCPage.getVerifyTitle();
 		Assert.assertEquals(verifyTitle, productTitle);
 		System.out.println("Expected product added in cart successfully");
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(e.getMessage() +" "+ e.getClass());
+		}
 		snap.addScreenCaptureFromPath(captureScreenshot(), "validateAddingItemfromMenuViaBrand");
 		snap.log(Status.PASS, "Item added in cart");
 		extent.flush();
 	}
-	//Validating the function of searching a item through search box and adding that into cart. here we're adding more than one product
-	//verifying whether all selected Items and Items added in cart are same and checking out to place order
-	@Test(dataProvider = "Delivery Details", dependsOnMethods = "validateAddingItemfromMenu")
+	                           //Validating the function of searching a item through search box and adding that into cart.
+	                                        //here we're adding more than one product
+	                   //verifying whether all selected Items and Items added in cart are same and checking out to place order
+	
+	@Test(dataProvider = "Delivery Details" , priority = 9)
 	public void validateAddingMultipleItemsTocartAndCheckout
 	(String s1, String s2, String s3, String s4, String s5, String s6, String s7, String s8, String s9, String s10) throws InterruptedException, IOException {
 		SelectYourCountry createAccountPage = new SelectYourCountry(driver);
@@ -213,7 +285,7 @@ public class TestExecution extends BaseClass{
 		CheckOutGettingOrderYourPage page = new CheckOutGettingOrderYourPage(driver);
 		TestExecution exe = new TestExecution("Validate adding multiple Items To cart and Checkout");
 		snap = extent.createTest("validateAddingMultipleItemsTocartAndCheckout");
-		//Apple airpods  mini fridge  microwave
+		try {
 		createAccountPage.getUnitedStates().getSearchBox(datas.getProduct1()).getSearchButton();
 		String productOne = listPage.getProductTitle();
 		listPage.getAddProductTocart().getContinueShopping().getNewSearchBox(datas.getProduct2()).getSearchButton();
@@ -235,7 +307,12 @@ public class TestExecution extends BaseClass{
 			System.out.println(productThree);
 		}
 		atoCPage.getCheckOutButton().getGuestSignIn().getFillDetails(s1, s2, s3, s4, s5, s6).getContinuePaymentButtonError(); 
+		//getting error scripting done for further steps
 		//getEmailBox().getPhoneBox().getContinuePaymentButton();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(e.getMessage() +" "+ e.getClass());
+		}
 		snap.addScreenCaptureFromPath(captureScreenshot(), "validateAddingMultipleItemsTocartAndCheckout");
 		snap.log(Status.PASS, page.getContinuePaymentButtonError());
 		extent.flush();

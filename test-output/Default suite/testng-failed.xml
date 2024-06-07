@@ -5,14 +5,8 @@
     <classes>
       <class name="test_execution_package.TestExecution">
         <methods>
-          <include name="ValidateSearchAndAddItemToCart"/>
-          <include name="validateAddingMultipleItemsTocartAndCheckout"/>
-          <include name="validateAddingItemfromMenuViaBrand"/>
+          <include name="ValidateCreateNewAccountFunctionMissingOneField"/>
           <include name="startUp"/>
-          <include name="validateAddingItemfromMenu"/>
-          <include name="ValidateAllMenuAndFooterLinks"/>
-          <include name="tearDown"/>
-          <include name="ValidateSignInFunction"/>
         </methods>
       </class> <!-- test_execution_package.TestExecution -->
     </classes>

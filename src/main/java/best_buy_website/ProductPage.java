@@ -37,7 +37,7 @@ public class ProductPage extends BaseClass {
 	public ProductPage getAddToCartButton() {
 		String skuVal = skuValue.getText();
 		System.out.println("Product sku value is "+skuVal);
-		
+		//javscriptDown(moveToLocation);
 		moveToParticularElement(moveToLocation);
 		
 		WebElement addTocart = driver.findElement(By.xpath(("(//button[@data-sku-id='"+skuVal+"'])[1]")));

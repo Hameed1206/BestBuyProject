@@ -39,10 +39,11 @@ public class UtilityClass {
 	public static WebDriver driver;
 	
 	public static void launch() {
-		/*ChromeOptions options = new ChromeOptions();
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
 		options.addArguments("--disable-gpu");
-		options.addArguments("--window-size=1920,1080");*/
+		options.addArguments("--window-size=1920,1080");
 		driver = new ChromeDriver();
 		driver.get("https://www.bestbuy.com/");
 		driver.manage().window().maximize();
@@ -82,6 +83,10 @@ public class UtilityClass {
 	public static void selectFromDropDown(WebElement element, String text) {
 		Select s = new Select(element);
 		s.selectByVisibleText(text);
+	}
+	public void javscriptDown(WebElement refName) {
+		JavascriptExecutor jks = (JavascriptExecutor) driver;
+		jks.executeScript("arguments[0].scrollIntoView(true);", refName);
 	}
 	public static void moveToParticularElement(WebElement element) {
 		Actions a = new Actions(driver);

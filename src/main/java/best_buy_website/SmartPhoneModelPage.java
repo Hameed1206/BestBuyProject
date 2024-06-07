@@ -20,7 +20,7 @@ public class SmartPhoneModelPage extends BaseClass {
 	}
 	//select mobile model and navigate to product list page
 	public ProductListPage getSelectPhone() {
-		selectPhone.get(2).click();
+		selectPhone.get(7).click();
 		return new ProductListPage(driver);
 	}
 }

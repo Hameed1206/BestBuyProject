@@ -2,6 +2,7 @@ package best_buy_website;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,10 +27,27 @@ public class ProductListPage extends BaseClass {
 	@FindBy (className = "go-to-cart-button")
 	WebElement goToCartButton;
 	
+	@FindBy (css = "span.item-count")
+	WebElement itemCount;
+	
 	public ProductListPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	
+	//apply filter for products
+	public ProductListPage getFilter(int a , int b) throws InterruptedException {
+		System.out.println("Item Count before filter "+itemCount.getText());
+		WebElement filterName = driver.findElement(By.xpath("//div[@class='bordered-section']/div[2]//section["+a+"]//strong"));
+		String filterN = filterName.getText();
+		System.out.println("Applied filter is "+filterN);
+		WebElement element = driver.findElement(By.xpath("//div[@class='bordered-section']/div[2]//section["+a+"]//li["+b+"]/a"));
+		element.click();
+		Thread.sleep(1000);
+		System.out.println("Item Count After filter "+itemCount.getText());
+		return this;
+	}
+	
 	//get first product title
 	public String getProductTitle() {
 		String productName = productTitle.get(0).getText();
@@ -38,7 +56,7 @@ public class ProductListPage extends BaseClass {
 	}
 	//select first product having add to cart option
 	public ProductPage clickProductWithAddToCartOption() {
-		productTitle.get(0).click();
+		productTitle.get(1).click();
 		return new ProductPage(driver);
 	}
 	//select first product

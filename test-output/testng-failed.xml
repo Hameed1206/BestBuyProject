@@ -7,14 +7,11 @@
     <classes>
       <class name="test_execution_package.TestExecution">
         <methods>
-          <include name="validateAddingMultipleItemsTocartAndCheckout"/>
-          <include name="ValidateSearchAndAddItemToCart"/>
-          <include name="validateAddingItemfromMenuViaBrand"/>
+          <include name="validateAddingMultipleItemsTocartAndCheckout" invocation-numbers="0"/>
+          <include name="ValidateCreateNewAccountFunctionMissingOneField" invocation-numbers="0"/>
           <include name="startUp"/>
-          <include name="validateAddingItemfromMenu"/>
-          <include name="ValidateAllMenuAndFooterLinks"/>
-          <include name="tearDown"/>
-          <include name="ValidateSignInFunction"/>
+          <include name="ValidateCreateNewAccountFunction" invocation-numbers="1"/>
+          <include name="validateSearchAndFilter"/>
         </methods>
       </class> <!-- test_execution_package.TestExecution -->
     </classes>

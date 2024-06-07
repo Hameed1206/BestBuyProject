@@ -33,6 +33,9 @@ public class CreateAccountPage extends BaseClass{
 	@FindBy(xpath = "//button[text()='Create an Account']")
 	WebElement createActButton;
 	
+	@FindBy (css = "div.tb-validation")
+	WebElement missedError;
+	
 	@FindBy (xpath = "//div[contains(@class,'c-alert-content')]//div")
 	WebElement errorMsg;
 	
@@ -81,8 +84,14 @@ public class CreateAccountPage extends BaseClass{
 		return this;
 	}
 	
+	public CreateAccountPage getMissedError() {
+		String text = missedError.getText();
+		System.out.println(text);
+		return this;
+	}
+	
 	public String getErrorMsg() {
-		//explicitWait(errorMsg);
+		explicitWait(errorMsg);
 		String currentUrl = driver.getCurrentUrl();
 		String errText = errorMsg.getText();
 		if (currentUrl.contains("recovery")) {
