@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="7" failed="1" skipped="4">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-07T17:33:13 IST" name="Suite" finished-at="2024-06-07T17:37:55 IST" duration-ms="281336">
+    <groups>
+    </groups>
+    <test started-at="2024-06-07T17:33:13 IST" name="Test" finished-at="2024-06-07T17:37:55 IST" duration-ms="281336">
+      <class name="test_execution_package.TestExecution">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:33:15 IST" name="startUp" finished-at="2024-06-07T17:33:29 IST" duration-ms="14050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateCreateNewAccountFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:33:29 IST" name="ValidateCreateNewAccountFunction" data-provider="SignUp function" finished-at="2024-06-07T17:33:51 IST" duration-ms="21359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hameed]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hussain]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Hameed@gm.co]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hameed@gm.co]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9.879879879E9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateCreateNewAccountFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:33:51 IST" name="tearDown" finished-at="2024-06-07T17:33:53 IST" duration-ms="2045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:33:53 IST" name="startUp" finished-at="2024-06-07T17:33:59 IST" duration-ms="6288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateCreateNewAccountFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:33:59 IST" name="ValidateCreateNewAccountFunction" data-provider="SignUp function" finished-at="2024-06-07T17:34:11 IST" duration-ms="12316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Guvi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Geek]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Guvi@gm.co]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Guvi@gm.co]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[6.546546546E9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateCreateNewAccountFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:34:11 IST" name="tearDown" finished-at="2024-06-07T17:34:13 IST" duration-ms="1777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:34:13 IST" name="startUp" finished-at="2024-06-07T17:34:19 IST" duration-ms="5567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateCreateNewAccountFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:34:19 IST" name="ValidateCreateNewAccountFunction" data-provider="SignUp function" finished-at="2024-06-07T17:34:34 IST" duration-ms="15647" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Testing@gm.co]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Testing@gm.co]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[3.213213213E9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateCreateNewAccountFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:34:34 IST" name="tearDown" finished-at="2024-06-07T17:34:36 IST" duration-ms="1887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:34:36 IST" name="startUp" finished-at="2024-06-07T17:34:43 IST" duration-ms="6486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateSignInFunction(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:34:43 IST" name="ValidateSignInFunction" data-provider="SignIn function" finished-at="2024-06-07T17:35:05 IST" duration-ms="21928" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Validating with Valid UserName and Valid Password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hameed@gm.co]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hameed@gm.co]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSignInFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:35:05 IST" name="tearDown" finished-at="2024-06-07T17:35:07 IST" duration-ms="2529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:35:07 IST" name="startUp" finished-at="2024-06-07T17:35:14 IST" duration-ms="6288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateSignInFunction(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:35:14 IST" name="ValidateSignInFunction" data-provider="SignIn function" finished-at="2024-06-07T17:35:25 IST" duration-ms="11557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Validating with Valid UserName and InValid Password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hameed@gm.co]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hameedgm.co]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSignInFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:35:25 IST" name="tearDown" finished-at="2024-06-07T17:35:27 IST" duration-ms="1761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:35:27 IST" name="startUp" finished-at="2024-06-07T17:35:35 IST" duration-ms="7959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateSignInFunction(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:35:35 IST" name="ValidateSignInFunction" data-provider="SignIn function" finished-at="2024-06-07T17:35:53 IST" duration-ms="17654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Validating with InValid UserName and Valid Password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hamd@gm.co]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hameed@gm.co]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSignInFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:35:53 IST" name="tearDown" finished-at="2024-06-07T17:35:55 IST" duration-ms="2257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:35:55 IST" name="startUp" finished-at="2024-06-07T17:36:02 IST" duration-ms="6675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateSignInFunction(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:36:02 IST" name="ValidateSignInFunction" data-provider="SignIn function" finished-at="2024-06-07T17:36:23 IST" duration-ms="21346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Validating with InValid UserName and InValid Password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Haed@gm.co]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hameed@gm.c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSignInFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:36:23 IST" name="tearDown" finished-at="2024-06-07T17:36:25 IST" duration-ms="1910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:36:25 IST" name="startUp" finished-at="2024-06-07T17:36:31 IST" duration-ms="5834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateAllMenuAndFooterLinks()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:36:31 IST" name="ValidateAllMenuAndFooterLinks" finished-at="2024-06-07T17:37:52 IST" depends-on-methods="test_execution_package.TestExecution.ValidateSignInFunction" duration-ms="81300" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <a class="body-copy-sm mr-200" href="/site/privacy-policy/state-privacy-rights/pcmcat204400050063.c?id=pcmcat204400050063"> is not clickable at point (451,723) because another element <div id="survey_window" class="modal fade modal-open in"> obscures it
+Build info: version: '4.19.0', revision: '5f9cec8963'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0d444696-4071-41a3-9c80-0bfa1a18f715, clickElement {id=982120bb-d148-4a81-bd58-03b2aa1997f5}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 126.0.1, moz:accessibilityChecks: false, moz:buildID: 20240526221752, moz:debuggerAddress: 127.0.0.1:32881, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30792, moz:profile: C:\Users\91936\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:32881/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (0d444696-4071-41a3-9c80-0bfa1a18f715)] -> xpath: //div[contains(@class,'justify-content-start')]/a]
+Session ID: 0d444696-4071-41a3-9c80-0bfa1a18f715]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a class="body-copy-sm mr-200" href="/site/privacy-policy/state-privacy-rights/pcmcat204400050063.c?id=pcmcat204400050063"> is not clickable at point (451,723) because another element <div id="survey_window" class="modal fade modal-open in"> obscures it
+Build info: version: '4.19.0', revision: '5f9cec8963'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0d444696-4071-41a3-9c80-0bfa1a18f715, clickElement {id=982120bb-d148-4a81-bd58-03b2aa1997f5}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 126.0.1, moz:accessibilityChecks: false, moz:buildID: 20240526221752, moz:debuggerAddress: 127.0.0.1:32881, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30792, moz:profile: C:\Users\91936\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:32881/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (0d444696-4071-41a3-9c80-0bfa1a18f715)] -> xpath: //div[contains(@class,'justify-content-start')]/a]
+Session ID: 0d444696-4071-41a3-9c80-0bfa1a18f715
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at best_buy_website.USHomepage.getFooterlinks(USHomepage.java:74)
+at test_execution_package.TestExecution.ValidateAllMenuAndFooterLinks(TestExecution.java:103)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateAllMenuAndFooterLinks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:37:52 IST" name="tearDown" finished-at="2024-06-07T17:37:55 IST" duration-ms="2675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ValidateSearchAndAddItemToCart(java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:37:55 IST" name="ValidateSearchAndAddItemToCart" finished-at="2024-06-07T17:37:55 IST" depends-on-methods="test_execution_package.TestExecution.ValidateAllMenuAndFooterLinks" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method test_execution_package.TestExecution.ValidateSearchAndAddItemToCart() on instance test_execution_package.TestExecution@a8ef162 depends on not successfully finished methods 
+[test_execution_package.TestExecution.ValidateAllMenuAndFooterLinks() on instance test_execution_package.TestExecution@a8ef162]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method test_execution_package.TestExecution.ValidateSearchAndAddItemToCart() on instance test_execution_package.TestExecution@a8ef162 depends on not successfully finished methods 
+[test_execution_package.TestExecution.ValidateAllMenuAndFooterLinks() on instance test_execution_package.TestExecution@a8ef162]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSearchAndAddItemToCart -->
+        <test-method signature="validateAddingItemfromMenu()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:37:55 IST" name="validateAddingItemfromMenu" finished-at="2024-06-07T17:37:55 IST" depends-on-methods="test_execution_package.TestExecution.ValidateSearchAndAddItemToCart" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method test_execution_package.TestExecution.validateAddingItemfromMenu() on instance test_execution_package.TestExecution@a8ef162 depends on not successfully finished methods 
+[test_execution_package.TestExecution.ValidateSearchAndAddItemToCart() on instance test_execution_package.TestExecution@a8ef162]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method test_execution_package.TestExecution.validateAddingItemfromMenu() on instance test_execution_package.TestExecution@a8ef162 depends on not successfully finished methods 
+[test_execution_package.TestExecution.ValidateSearchAndAddItemToCart() on instance test_execution_package.TestExecution@a8ef162]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddingItemfromMenu -->
+        <test-method signature="validateAddingItemfromMenuViaBrand()[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:37:55 IST" name="validateAddingItemfromMenuViaBrand" finished-at="2024-06-07T17:37:55 IST" depends-on-methods="test_execution_package.TestExecution.validateAddingItemfromMenu" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method test_execution_package.TestExecution.validateAddingItemfromMenuViaBrand() on instance test_execution_package.TestExecution@a8ef162 depends on not successfully finished methods 
+[test_execution_package.TestExecution.validateAddingItemfromMenu() on instance test_execution_package.TestExecution@a8ef162]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method test_execution_package.TestExecution.validateAddingItemfromMenuViaBrand() on instance test_execution_package.TestExecution@a8ef162 depends on not successfully finished methods 
+[test_execution_package.TestExecution.validateAddingItemfromMenu() on instance test_execution_package.TestExecution@a8ef162]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddingItemfromMenuViaBrand -->
+        <test-method signature="validateAddingMultipleItemsTocartAndCheckout(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@a8ef162]" started-at="2024-06-07T17:37:55 IST" name="validateAddingMultipleItemsTocartAndCheckout" finished-at="2024-06-07T17:37:55 IST" depends-on-methods="test_execution_package.TestExecution.validateAddingItemfromMenu" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method test_execution_package.TestExecution.validateAddingMultipleItemsTocartAndCheckout() on instance test_execution_package.TestExecution@a8ef162 depends on not successfully finished methods 
+[test_execution_package.TestExecution.validateAddingItemfromMenu() on instance test_execution_package.TestExecution@a8ef162]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method test_execution_package.TestExecution.validateAddingMultipleItemsTocartAndCheckout() on instance test_execution_package.TestExecution@a8ef162 depends on not successfully finished methods 
+[test_execution_package.TestExecution.validateAddingItemfromMenu() on instance test_execution_package.TestExecution@a8ef162]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddingMultipleItemsTocartAndCheckout -->
+      </class> <!-- test_execution_package.TestExecution -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="email" value="testingme@gmail.com"/>
+    <parameter name="phoneNo" value="9677160111"/>
+    <classes>
+      <class name="test_execution_package.TestExecution">
+        <methods>
+          <include name="validateAddingMultipleItemsTocartAndCheckout"/>
+          <include name="ValidateSearchAndAddItemToCart"/>
+          <include name="validateAddingItemfromMenuViaBrand"/>
+          <include name="startUp"/>
+          <include name="validateAddingItemfromMenu"/>
+          <include name="ValidateAllMenuAndFooterLinks"/>
+          <include name="tearDown"/>
+          <include name="ValidateSignInFunction"/>
+        </methods>
+      </class> <!-- test_execution_package.TestExecution -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

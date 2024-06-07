@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-07T17:16:21 IST" name="Suite" finished-at="2024-06-07T17:26:06 IST" duration-ms="585567">
+    <groups>
+    </groups>
+    <test started-at="2024-06-07T17:16:21 IST" name="Test" finished-at="2024-06-07T17:26:06 IST" duration-ms="585567">
+      <class name="test_execution_package.TestExecution">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:16:22 IST" name="startUp" finished-at="2024-06-07T17:16:40 IST" duration-ms="17724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateCreateNewAccountFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:16:40 IST" name="ValidateCreateNewAccountFunction" data-provider="SignUp function" finished-at="2024-06-07T17:17:03 IST" duration-ms="23595" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hameed]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hussain]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Hameed@gm.co]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hameed@gm.co]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9.879879879E9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateCreateNewAccountFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:17:03 IST" name="tearDown" finished-at="2024-06-07T17:17:04 IST" duration-ms="401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:17:04 IST" name="startUp" finished-at="2024-06-07T17:17:11 IST" duration-ms="7406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateCreateNewAccountFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:17:11 IST" name="ValidateCreateNewAccountFunction" data-provider="SignUp function" finished-at="2024-06-07T17:17:30 IST" duration-ms="19000" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Guvi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Geek]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Guvi@gm.co]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Guvi@gm.co]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[6.546546546E9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateCreateNewAccountFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:17:30 IST" name="tearDown" finished-at="2024-06-07T17:17:31 IST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:17:31 IST" name="startUp" finished-at="2024-06-07T17:17:35 IST" duration-ms="4381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateCreateNewAccountFunction(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:17:35 IST" name="ValidateCreateNewAccountFunction" data-provider="SignUp function" finished-at="2024-06-07T17:17:53 IST" duration-ms="17964" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Testing@gm.co]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Testing@gm.co]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[3.213213213E9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateCreateNewAccountFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:17:53 IST" name="tearDown" finished-at="2024-06-07T17:17:53 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:17:54 IST" name="startUp" finished-at="2024-06-07T17:17:57 IST" duration-ms="2805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateSignInFunction(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:17:57 IST" name="ValidateSignInFunction" data-provider="SignIn function" finished-at="2024-06-07T17:18:16 IST" duration-ms="19062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Validating with Valid UserName and Valid Password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hameed@gm.co]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hameed@gm.co]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSignInFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:18:16 IST" name="tearDown" finished-at="2024-06-07T17:18:16 IST" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:18:16 IST" name="startUp" finished-at="2024-06-07T17:18:19 IST" duration-ms="3065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateSignInFunction(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:18:19 IST" name="ValidateSignInFunction" data-provider="SignIn function" finished-at="2024-06-07T17:18:37 IST" duration-ms="18522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Validating with Valid UserName and InValid Password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hameed@gm.co]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hameedgm.co]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSignInFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:18:37 IST" name="tearDown" finished-at="2024-06-07T17:18:38 IST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:18:38 IST" name="startUp" finished-at="2024-06-07T17:18:41 IST" duration-ms="2824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateSignInFunction(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:18:41 IST" name="ValidateSignInFunction" data-provider="SignIn function" finished-at="2024-06-07T17:18:58 IST" duration-ms="17699" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Validating with InValid UserName and Valid Password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hamd@gm.co]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hameed@gm.co]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSignInFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:18:58 IST" name="tearDown" finished-at="2024-06-07T17:18:58 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:18:58 IST" name="startUp" finished-at="2024-06-07T17:19:01 IST" duration-ms="2818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateSignInFunction(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:19:01 IST" name="ValidateSignInFunction" data-provider="SignIn function" finished-at="2024-06-07T17:19:24 IST" duration-ms="22982" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Validating with InValid UserName and InValid Password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Haed@gm.co]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hameed@gm.c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSignInFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:19:24 IST" name="tearDown" finished-at="2024-06-07T17:19:25 IST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:19:25 IST" name="startUp" finished-at="2024-06-07T17:19:28 IST" duration-ms="3952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateAllMenuAndFooterLinks()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:19:28 IST" name="ValidateAllMenuAndFooterLinks" finished-at="2024-06-07T17:21:26 IST" depends-on-methods="test_execution_package.TestExecution.ValidateSignInFunction" duration-ms="117198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateAllMenuAndFooterLinks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:21:26 IST" name="tearDown" finished-at="2024-06-07T17:21:26 IST" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:21:26 IST" name="startUp" finished-at="2024-06-07T17:21:29 IST" duration-ms="3360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="ValidateSearchAndAddItemToCart(java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:21:29 IST" name="ValidateSearchAndAddItemToCart" finished-at="2024-06-07T17:22:33 IST" depends-on-methods="test_execution_package.TestExecution.ValidateAllMenuAndFooterLinks" duration-ms="64095" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testingme@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9677160111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSearchAndAddItemToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:22:33 IST" name="tearDown" finished-at="2024-06-07T17:22:34 IST" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:22:34 IST" name="startUp" finished-at="2024-06-07T17:22:37 IST" duration-ms="3691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="validateAddingItemfromMenu()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:22:37 IST" name="validateAddingItemfromMenu" finished-at="2024-06-07T17:23:29 IST" depends-on-methods="test_execution_package.TestExecution.ValidateSearchAndAddItemToCart" duration-ms="51746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddingItemfromMenu -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:23:29 IST" name="tearDown" finished-at="2024-06-07T17:23:30 IST" duration-ms="375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:23:30 IST" name="startUp" finished-at="2024-06-07T17:23:32 IST" duration-ms="2242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="validateAddingItemfromMenuViaBrand()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:23:32 IST" name="validateAddingItemfromMenuViaBrand" finished-at="2024-06-07T17:24:36 IST" depends-on-methods="test_execution_package.TestExecution.validateAddingItemfromMenu" duration-ms="64382" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="/site/samsung-galaxy/unlocked-samsung-galaxy/pcmcat1496179166581.c?id=pcmcat1496179166581" data-track="[context:widgetType=flex,linkContent=Unlocked Samsung phones,linkRegion=Body,linkPlacement=c1w3]" class="flex-image-inner-wrapper flex-fluid-image" aria-hidden="true" tabindex="-1" style="background-image: url(&quot;https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6570/6570299_sd.jpg;maxHeight=334;maxWidth=334&quot;);">...</a> is not clickable at point (633, 567). Other element would receive the click: <div id="survey_window" class="modal fade modal-open in" role="dialog" style="margin-top: 214px; display: block;">...</div>
+  (Session info: chrome=125.0.6422.142)
+Build info: version: '4.19.0', revision: '5f9cec8963'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1668e8184ff8641359c849de650aa09, clickElement {id=f.02FB281F286689C70D3F32083610B253.d.2389BAED2EE4CABCF849B1C4B17698FC.e.308}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\91936\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65331/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a1668e8184ff8641359c849de650aa09)] -> css selector: div.flex-grid a]
+Session ID: a1668e8184ff8641359c849de650aa09]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/site/samsung-galaxy/unlocked-samsung-galaxy/pcmcat1496179166581.c?id=pcmcat1496179166581" data-track="[context:widgetType=flex,linkContent=Unlocked Samsung phones,linkRegion=Body,linkPlacement=c1w3]" class="flex-image-inner-wrapper flex-fluid-image" aria-hidden="true" tabindex="-1" style="background-image: url(&quot;https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6570/6570299_sd.jpg;maxHeight=334;maxWidth=334&quot;);">...</a> is not clickable at point (633, 567). Other element would receive the click: <div id="survey_window" class="modal fade modal-open in" role="dialog" style="margin-top: 214px; display: block;">...</div>
+  (Session info: chrome=125.0.6422.142)
+Build info: version: '4.19.0', revision: '5f9cec8963'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1668e8184ff8641359c849de650aa09, clickElement {id=f.02FB281F286689C70D3F32083610B253.d.2389BAED2EE4CABCF849B1C4B17698FC.e.308}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\91936\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65331/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a1668e8184ff8641359c849de650aa09)] -> css selector: div.flex-grid a]
+Session ID: a1668e8184ff8641359c849de650aa09
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at best_buy_website.SmartPhoneModelPage.getSelectPhone(SmartPhoneModelPage.java:23)
+at test_execution_package.TestExecution.validateAddingItemfromMenuViaBrand(TestExecution.java:168)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddingItemfromMenuViaBrand -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:24:36 IST" name="tearDown" finished-at="2024-06-07T17:24:36 IST" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:24:37 IST" name="startUp" finished-at="2024-06-07T17:24:41 IST" duration-ms="4627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="validateAddingMultipleItemsTocartAndCheckout(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:24:41 IST" name="validateAddingMultipleItemsTocartAndCheckout" data-provider="Delivery Details" finished-at="2024-06-07T17:26:06 IST" depends-on-methods="test_execution_package.TestExecution.validateAddingItemfromMenu" duration-ms="84763" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hameed]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hussain]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1342 Lakeside Dr Redding, California(CA), 96001]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[California]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[CA]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[96001.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[6.0110009913E15]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2030.0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[636.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddingMultipleItemsTocartAndCheckout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_execution_package.TestExecution@65f8f5ae]" started-at="2024-06-07T17:26:06 IST" name="tearDown" finished-at="2024-06-07T17:26:06 IST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test_execution_package.TestExecution -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

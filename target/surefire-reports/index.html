@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\91936\eclipse-workspace\Best_Buy\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_execution_package.TestExecution" class="method navigator-link" hash-for-method="validateAddingItemfromMenuViaBrand">validateAddingItemfromMenuViaBrand</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_execution_package.TestExecution" class="method navigator-link" hash-for-method="ValidateAllMenuAndFooterLinks">ValidateAllMenuAndFooterLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_execution_package.TestExecution" class="method navigator-link" hash-for-method="ValidateCreateNewAccountFunction(Guvi, Geek, Guvi@gm.co, Guvi@gm.co, 6.546546546E9)">ValidateCreateNewAccountFunction(Guvi, Geek, Guvi@gm.co, Guvi@gm.co, 6.546546546E9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_execution_package.TestExecution" class="method navigator-link" hash-for-method="ValidateCreateNewAccountFunction(Automation, Testing, Testing@gm.co, Testing@gm.co, 3.213213213E9)">ValidateCreateNewAccountFunction(Automation, Testing, Testing@gm.co, Testing@gm.co, 3.213213213E9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_execution_package.TestExecution" class="method navigator-link" hash-for-method="ValidateCreateNewAccountFunction(Hameed, Hussain, Hameed@gm.co, Hameed@gm.co, 9.879879879E9)">ValidateCreateNewAccountFunction(Hameed, Hussain, Hameed@gm.co, Hameed@gm.co, 9.879879879E9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_execution_package.TestExecution" class="method navigator-link" hash-for-method="ValidateSearchAndAddItemToCart(testingme@gmail.com, 9677160111)">ValidateSearchAndAddItemToCart(testingme@gmail.com, 9677160111)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_execution_package.TestExecution" class="method navigator-link" hash-for-method="ValidateSignInFunction(Validating with Valid UserName and Valid Password, Hameed@gm.co, hameed@gm.co)">ValidateSignInFunction(Validating with Valid UserName and Valid Password, Hameed@gm.co, hameed@gm.co)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_execution_package.TestExecution" class="method navigator-link" hash-for-method="ValidateSignInFunction(Validating with Valid UserName and InValid Password, Hameed@gm.co, hameedgm.co)">ValidateSignInFunction(Validating with Valid UserName and InValid Password, Hameed@gm.co, hameedgm.co)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_execution_package.TestExecution" class="method navigator-link" hash-for-method="ValidateSignInFunction(Validating with InValid UserName and Valid Password, Hamd@gm.co, hameed@gm.co)">ValidateSignInFunction(Validating with InValid UserName and Valid Password, Hamd@gm.co, hameed@gm.co)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_execution_package.TestExecution" class="method navigator-link" hash-for-method="ValidateSignInFunction(Validating with InValid UserName and InValid Password, Haed@gm.co, hameed@gm.c)">ValidateSignInFunction(Validating with InValid UserName and InValid Password, Haed@gm.co, hameed@gm.c)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_execution_package.TestExecution" class="method navigator-link" hash-for-method="validateAddingItemfromMenu">validateAddingItemfromMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test_execution_package.TestExecution" class="method navigator-link" hash-for-method="validateAddingMultipleItemsTocartAndCheckout(Hameed, Hussain, 1342 Lakeside Dr Redding, California(CA), 96001, California, CA, 96001.0, 6.0110009...)">validateAddingMultipleItemsTocartAndCheckout(Hameed, Hussain, 1342 Lakeside Dr Redding, California(CA), 96001, California, CA, 96001.0, 6.0110009...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test_execution_package.TestExecution</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddingItemfromMenuViaBrand">
+                  </a> <!-- validateAddingItemfromMenuViaBrand -->
+                  <span class="method-name">validateAddingItemfromMenuViaBrand</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/site/samsung-galaxy/unlocked-samsung-galaxy/pcmcat1496179166581.c?id=pcmcat1496179166581&quot; data-track=&quot;[context:widgetType=flex,linkContent=Unlocked Samsung phones,linkRegion=Body,linkPlacement=c1w3]&quot; class=&quot;flex-image-inner-wrapper flex-fluid-image&quot; aria-hidden=&quot;true&quot; tabindex=&quot;-1&quot; style=&quot;background-image: url(&amp;quot;https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6570/6570299_sd.jpg;maxHeight=334;maxWidth=334&amp;quot;);&quot;&gt;...&lt;/a&gt; is not clickable at point (633, 567). Other element would receive the click: &lt;div id=&quot;survey_window&quot; class=&quot;modal fade modal-open in&quot; role=&quot;dialog&quot; style=&quot;margin-top: 214px; display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=125.0.6422.142)
+Build info: version: &apos;4.19.0&apos;, revision: &apos;5f9cec8963&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a1668e8184ff8641359c849de650aa09, clickElement {id=f.02FB281F286689C70D3F32083610B253.d.2389BAED2EE4CABCF849B1C4B17698FC.e.308}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\91936\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65331/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a1668e8184ff8641359c849de650aa09)] -&gt; css selector: div.flex-grid a]
+Session ID: a1668e8184ff8641359c849de650aa09
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at best_buy_website.SmartPhoneModelPage.getSelectPhone(SmartPhoneModelPage.java:23)
+	at test_execution_package.TestExecution.validateAddingItemfromMenuViaBrand(TestExecution.java:168)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_execution_package.TestExecution</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateAllMenuAndFooterLinks">
+                  </a> <!-- ValidateAllMenuAndFooterLinks -->
+                  <span class="method-name">ValidateAllMenuAndFooterLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateCreateNewAccountFunction(Guvi, Geek, Guvi@gm.co, Guvi@gm.co, 6.546546546E9)">
+                  </a> <!-- ValidateCreateNewAccountFunction(Guvi, Geek, Guvi@gm.co, Guvi@gm.co, 6.546546546E9) -->
+                  <span class="method-name">ValidateCreateNewAccountFunction</span>
+                  <span class="parameters">(Guvi,Geek,Guvi@gm.co,Guvi@gm.co,6.546546546E9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateCreateNewAccountFunction(Automation, Testing, Testing@gm.co, Testing@gm.co, 3.213213213E9)">
+                  </a> <!-- ValidateCreateNewAccountFunction(Automation, Testing, Testing@gm.co, Testing@gm.co, 3.213213213E9) -->
+                  <span class="method-name">ValidateCreateNewAccountFunction</span>
+                  <span class="parameters">(Automation,Testing,Testing@gm.co,Testing@gm.co,3.213213213E9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateCreateNewAccountFunction(Hameed, Hussain, Hameed@gm.co, Hameed@gm.co, 9.879879879E9)">
+                  </a> <!-- ValidateCreateNewAccountFunction(Hameed, Hussain, Hameed@gm.co, Hameed@gm.co, 9.879879879E9) -->
+                  <span class="method-name">ValidateCreateNewAccountFunction</span>
+                  <span class="parameters">(Hameed,Hussain,Hameed@gm.co,Hameed@gm.co,9.879879879E9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateSearchAndAddItemToCart(testingme@gmail.com, 9677160111)">
+                  </a> <!-- ValidateSearchAndAddItemToCart(testingme@gmail.com, 9677160111) -->
+                  <span class="method-name">ValidateSearchAndAddItemToCart</span>
+                  <span class="parameters">(testingme@gmail.com,9677160111)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateSignInFunction(Validating with Valid UserName and Valid Password, Hameed@gm.co, hameed@gm.co)">
+                  </a> <!-- ValidateSignInFunction(Validating with Valid UserName and Valid Password, Hameed@gm.co, hameed@gm.co) -->
+                  <span class="method-name">ValidateSignInFunction</span>
+                  <span class="parameters">(Validating with Valid UserName and Valid Password,Hameed@gm.co,hameed@gm.co)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateSignInFunction(Validating with Valid UserName and InValid Password, Hameed@gm.co, hameedgm.co)">
+                  </a> <!-- ValidateSignInFunction(Validating with Valid UserName and InValid Password, Hameed@gm.co, hameedgm.co) -->
+                  <span class="method-name">ValidateSignInFunction</span>
+                  <span class="parameters">(Validating with Valid UserName and InValid Password,Hameed@gm.co,hameedgm.co)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateSignInFunction(Validating with InValid UserName and Valid Password, Hamd@gm.co, hameed@gm.co)">
+                  </a> <!-- ValidateSignInFunction(Validating with InValid UserName and Valid Password, Hamd@gm.co, hameed@gm.co) -->
+                  <span class="method-name">ValidateSignInFunction</span>
+                  <span class="parameters">(Validating with InValid UserName and Valid Password,Hamd@gm.co,hameed@gm.co)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateSignInFunction(Validating with InValid UserName and InValid Password, Haed@gm.co, hameed@gm.c)">
+                  </a> <!-- ValidateSignInFunction(Validating with InValid UserName and InValid Password, Haed@gm.co, hameed@gm.c) -->
+                  <span class="method-name">ValidateSignInFunction</span>
+                  <span class="parameters">(Validating with InValid UserName and InValid Password,Haed@gm.co,hameed@gm.c)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddingItemfromMenu">
+                  </a> <!-- validateAddingItemfromMenu -->
+                  <span class="method-name">validateAddingItemfromMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddingMultipleItemsTocartAndCheckout(Hameed, Hussain, 1342 Lakeside Dr Redding, California(CA), 96001, California, CA, 96001.0, 6.0110009...)">
+                  </a> <!-- validateAddingMultipleItemsTocartAndCheckout(Hameed, Hussain, 1342 Lakeside Dr Redding, California(CA), 96001, California, CA, 96001.0, 6.0110009...) -->
+                  <span class="method-name">validateAddingMultipleItemsTocartAndCheckout</span>
+                  <span class="parameters">(Hameed,Hussain,1342 Lakeside Dr Redding, California(CA), 96001,California,CA,96001.0,6.0110009913E15,6.0,2030.0,636.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\91936\eclipse-workspace\Best_Buy\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;email&quot; value=&quot;testingme@gmail.com&quot;/&gt;
+    &lt;parameter name=&quot;phoneNo&quot; value=&quot;9677160111&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test_execution_package.TestData&quot;/&gt;
+      &lt;class name=&quot;test_execution_package.TestExecution&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'ValidateAllMenuAndFooterLinks')
+data.setCell(0, 2, 'test_execution_package.TestExecution')
+data.setCell(0, 3, 117198);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateAddingMultipleItemsTocartAndCheckout')
+data.setCell(1, 2, 'test_execution_package.TestExecution')
+data.setCell(1, 3, 84763);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateAddingItemfromMenuViaBrand')
+data.setCell(2, 2, 'test_execution_package.TestExecution')
+data.setCell(2, 3, 64382);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ValidateSearchAndAddItemToCart')
+data.setCell(3, 2, 'test_execution_package.TestExecution')
+data.setCell(3, 3, 64095);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateAddingItemfromMenu')
+data.setCell(4, 2, 'test_execution_package.TestExecution')
+data.setCell(4, 3, 51746);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ValidateCreateNewAccountFunction')
+data.setCell(5, 2, 'test_execution_package.TestExecution')
+data.setCell(5, 3, 23595);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'ValidateSignInFunction')
+data.setCell(6, 2, 'test_execution_package.TestExecution')
+data.setCell(6, 3, 22982);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ValidateSignInFunction')
+data.setCell(7, 2, 'test_execution_package.TestExecution')
+data.setCell(7, 3, 19062);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ValidateCreateNewAccountFunction')
+data.setCell(8, 2, 'test_execution_package.TestExecution')
+data.setCell(8, 3, 19000);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ValidateSignInFunction')
+data.setCell(9, 2, 'test_execution_package.TestExecution')
+data.setCell(9, 3, 18522);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'ValidateCreateNewAccountFunction')
+data.setCell(10, 2, 'test_execution_package.TestExecution')
+data.setCell(10, 3, 17964);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'ValidateSignInFunction')
+data.setCell(11, 2, 'test_execution_package.TestExecution')
+data.setCell(11, 3, 17699);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_execution_package.TestExecution</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateCreateNewAccountFunction(Hameed, Hussain, Hameed@gm.co, Hameed@gm.co, 9.879879879E9)</span>
+                <span class="method-start">17727 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">41330 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp</span>
+                <span class="method-start">41731 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateCreateNewAccountFunction(Guvi, Geek, Guvi@gm.co, Guvi@gm.co, 6.546546546E9)</span>
+                <span class="method-start">49137 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">68139 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp</span>
+                <span class="method-start">68386 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateCreateNewAccountFunction(Automation, Testing, Testing@gm.co, Testing@gm.co, 3.213213213E9)</span>
+                <span class="method-start">72767 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">90731 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp</span>
+                <span class="method-start">91617 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateSignInFunction(Validating with Valid UserName and Valid Password, Hameed@gm.co, hameed@gm.co)</span>
+                <span class="method-start">94422 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">113484 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp</span>
+                <span class="method-start">113748 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateSignInFunction(Validating with Valid UserName and InValid Password, Hameed@gm.co, hameedgm.co)</span>
+                <span class="method-start">116813 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">135335 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp</span>
+                <span class="method-start">135590 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateSignInFunction(Validating with InValid UserName and Valid Password, Hamd@gm.co, hameed@gm.co)</span>
+                <span class="method-start">138414 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">156114 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp</span>
+                <span class="method-start">156370 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateSignInFunction(Validating with InValid UserName and InValid Password, Haed@gm.co, hameed@gm.c)</span>
+                <span class="method-start">159188 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">182170 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp</span>
+                <span class="method-start">182402 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateAllMenuAndFooterLinks</span>
+                <span class="method-start">186354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">303553 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp</span>
+                <span class="method-start">303910 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateSearchAndAddItemToCart(testingme@gmail.com, 9677160111)</span>
+                <span class="method-start">307270 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">371365 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp</span>
+                <span class="method-start">371599 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAddingItemfromMenu</span>
+                <span class="method-start">375290 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">427036 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp</span>
+                <span class="method-start">427411 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateAddingItemfromMenuViaBrand</span>
+                <span class="method-start">429653 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">494048 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startUp</span>
+                <span class="method-start">494685 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAddingMultipleItemsTocartAndCheckout(Hameed, Hussain, 1342 Lakeside Dr Redding, California(CA), 96001, California, CA, 96001.0, 6.0110009...)</span>
+                <span class="method-start">499312 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">584075 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
