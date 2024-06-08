@@ -57,7 +57,6 @@ public class USHomepage extends BaseClass {
 			TopSecondLineLinks.get(i).click();
 			String title = driver.getTitle();
 			System.out.println(i+" "+title);
-			
 		}
 		System.out.println("");
 		return this;

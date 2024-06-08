@@ -28,7 +28,9 @@ import best_buy_website.SignInPage;
 
 public class TestExecution extends BaseClass{
 	
+	//To access test datas maintained in a class
 	TestData datas;
+	
 	//All reporting variables made Instance
 	ExtentSparkReporter crtreport;
 	ExtentReports extent;
@@ -57,6 +59,7 @@ public class TestExecution extends BaseClass{
 	}
 	
 	//Constructor to invoke reporting activities
+	// We are asking report to track activities of all test and prepare a report with screenshots
 	public TestExecution(String name) {
 		long timeMillis = System.currentTimeMillis();
 		String reportPath = "C:\\Users\\91936\\eclipse-workspace\\Best_Buy\\target\\"+timeMillis+".html";
@@ -67,8 +70,8 @@ public class TestExecution extends BaseClass{
 		extent = new ExtentReports();
 		extent.attachReporter(crtreport);
 	}
-                                 //Test  Validating sign up function using different credentials
-	                              // Data provider is used to access multiple values in Excel
+                                 //Validating sign up function using different credentials
+	                             // Data provider is used to access multiple values in Excel
 	@Test(dataProvider = "SignUp function" , priority = 1)
 	public void ValidateCreateNewAccountFunction(String s1, String s2, String s3, String s4, String s5) throws IOException {
 		SelectYourCountry createAccountPage = new SelectYourCountry(driver);
@@ -87,7 +90,7 @@ public class TestExecution extends BaseClass{
 		snap.log(Status.PASS, errorMsg);
 		extent.flush();
 	}
-	                                        //Test Validating sign in function missing one field. 
+	                                        //Test Validating sign up function missing one field. 
 	
 		@Test(dataProvider = "SignUp function 2" , priority = 2)
 		public void ValidateCreateNewAccountFunctionMissingOneField(String s1, String s2, String s3, String s4, String s5) throws IOException {
@@ -165,7 +168,7 @@ public class TestExecution extends BaseClass{
 	
 	                //Validating the function of searching a item through search box and adding that into cart and verifying whether 
 	                            //selected Item and Item added in cart is same and checking out to place order
-	                         // Also we are asking report to track activities and prepare a report with screenshots
+	                   
 	
 	@Parameters({"email","phoneNo"})
 	@Test(priority = 5)
@@ -177,7 +180,7 @@ public class TestExecution extends BaseClass{
 		CheckOutGettingOrderYourPage page = new CheckOutGettingOrderYourPage(driver);
 		TestExecution exe = new TestExecution("Validate Search and add item to cart");
 		
-		snap = extent.createTest("ValidateSearchAndAddItemToCart");
+		snap = extent.createTest("ValidateSearchAndAddItemToCartAndCheckout");
 		try {
 			createAccountPage.getUnitedStates().getSearchBox(datas.getProduct1()).getSearchButton().getProductList();
 			String productTitle = proPage.getProductTitle();
@@ -195,10 +198,11 @@ public class TestExecution extends BaseClass{
 	    //.getCreditCardBox().getExpMonth().getExpYear().getCvvBox().getfName().getlName().getAddress()
 		//.getCityName().getStateName().getPostCode().getPlaceOrderButton().getErrorMsg();
 		
-		snap.addScreenCaptureFromPath(captureScreenshot(), "ValidateSearchAndAddItemToCart");
+		snap.addScreenCaptureFromPath(captureScreenshot(), "ValidateSearchAndAddItemToCartandCheckout");
 		snap.log(Status.PASS, page.getContinuePaymentButtonError());
 		extent.flush();
 	}
+	                                          //Validating the filter option
 	@Test(priority = 6)
 	public void validateSearchAndFilter() throws IOException, InterruptedException {
 		SelectYourCountry createAccountPage = new SelectYourCountry(driver);
@@ -208,7 +212,7 @@ public class TestExecution extends BaseClass{
 		snap = extent.createTest("ValidateSearchAndFilter");
 		try {
 			createAccountPage.getUnitedStates().getSearchBox(datas.getProduct1()).getSearchButton().getFilter(1, 1).getFilter(2, 1).getFilter(3, 6)
-			.getFilter(4, 2).getFilter(6, 3).getFilter(8, 2);
+			.getFilter(4, 2).getFilter(6, 3).getFilter(7, 2);
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage() +" "+ e.getClass());
@@ -218,7 +222,7 @@ public class TestExecution extends BaseClass{
 		extent.flush();
 	}
 	
-	                                // Validating function of adding a Item through menu and options there
+	                             // Validating function of adding a Item through menu and options there
 	
 	@Test(priority = 7)
 	public void validateAddingItemfromMenu() throws IOException {
@@ -246,20 +250,20 @@ public class TestExecution extends BaseClass{
 		extent.flush();
 	}
 	
-	                                     //Validating function of adding item through Brand option from menu
+	                            //Validating function of adding item through Brand option from menu
 	
 	@Test(priority = 8)
 	public void validateAddingItemfromMenuViaBrand() throws IOException {
 		SelectYourCountry createAccountPage = new SelectYourCountry(driver);
 		datas = new TestData();
-		ProductPage itemPage = new ProductPage(driver);
+		ProductListPage listPage = new ProductListPage(driver);
 		AddToCartPage atoCPage = new AddToCartPage(driver);
 		TestExecution exe = new TestExecution("Validate adding item from menu via brand");
 		snap = extent.createTest("validateAddingItemfromMenuViaBrand");
 		try {
-		createAccountPage.getUnitedStates().getMenuButtton().getBrandsButton(datas.getBrandName()).getSmartPhones().getSelectPhone().clickProductWithAddToCartOption();
-		String productTitle = itemPage.getProductTitle();
-		itemPage.getAddToCartButton().getGoToCartButton();
+		createAccountPage.getUnitedStates().getMenuButtton().getBrandsButton(datas.getBrandName()).getSmartPhones().getSelectPhone();
+		String productTitle = listPage.getProductTitle();
+		listPage.getAddProductTocart().getGoToCartButton();
 		String verifyTitle = atoCPage.getVerifyTitle();
 		Assert.assertEquals(verifyTitle, productTitle);
 		System.out.println("Expected product added in cart successfully");
@@ -271,7 +275,7 @@ public class TestExecution extends BaseClass{
 		snap.log(Status.PASS, "Item added in cart");
 		extent.flush();
 	}
-	                           //Validating the function of searching a item through search box and adding that into cart.
+	                          //Validating the function of searching a item through search box and adding that into cart.
 	                                        //here we're adding more than one product
 	                   //verifying whether all selected Items and Items added in cart are same and checking out to place order
 	

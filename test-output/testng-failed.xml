@@ -7,11 +7,8 @@
     <classes>
       <class name="test_execution_package.TestExecution">
         <methods>
-          <include name="validateAddingMultipleItemsTocartAndCheckout" invocation-numbers="0"/>
-          <include name="ValidateCreateNewAccountFunctionMissingOneField" invocation-numbers="0"/>
+          <include name="validateAddingItemfromMenuViaBrand"/>
           <include name="startUp"/>
-          <include name="ValidateCreateNewAccountFunction" invocation-numbers="1"/>
-          <include name="validateSearchAndFilter"/>
         </methods>
       </class> <!-- test_execution_package.TestExecution -->
     </classes>

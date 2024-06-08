@@ -56,7 +56,7 @@ public class ProductListPage extends BaseClass {
 	}
 	//select first product having add to cart option
 	public ProductPage clickProductWithAddToCartOption() {
-		productTitle.get(1).click();
+		productTitle.get(0).click();
 		return new ProductPage(driver);
 	}
 	//select first product
